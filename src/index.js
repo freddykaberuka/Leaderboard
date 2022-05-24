@@ -1,7 +1,9 @@
-import _ from 'lodash'
+// eslint-disable-next-line no-unused-vars
+import _ from 'lodash';
 import './style.css';
+
 const component = () => {
-  
-}
+
+};
 
 document.body.appendChild(component());

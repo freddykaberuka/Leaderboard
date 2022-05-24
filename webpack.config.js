@@ -2,7 +2,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-  mode:'production',
+  mode: 'production',
   entry: './src/index.js',
   devServer: {
     static: './dist',
@@ -25,7 +25,7 @@ module.exports = {
       },
     ],
   },
-   optimization: {
+  optimization: {
     runtimeChunk: 'single',
   },
 };

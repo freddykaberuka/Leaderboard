@@ -1,13 +1,9 @@
-import _ from 'lodash'
+// eslint-disable-next-line no-unused-vars
+import _ from 'lodash';
 import './style.css';
-function component() {
-  const element = document.createElement('div');
 
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-  element.classList.add('hello');
+const component = () => {
 
-  return element;
-}
+};
 
 document.body.appendChild(component());

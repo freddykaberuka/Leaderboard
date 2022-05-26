@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  margin-left: 200px;
+  margin-left: 170px;
 }
 
 .container {
@@ -22,13 +22,15 @@ h1 {
 }
 
 .heading button {
-  margin: 20px;
+  margin: 20px 0;
   padding: 10px;
   box-shadow: 0 6px 10px 0 black;
 }
 
 .list {
   border: 1px solid;
+  height: 50vh;
+  overflow: scroll;
 }
 
 .list1 {
@@ -66,14 +68,44 @@ form {
 }
 
 .button {
-  text-align: right;
-  width: 50%;
-  margin: 0;
-  padding: 0;
+  text-align: center;
 }
 
 .button button {
   margin: 10px;
   padding: 10px;
   box-shadow: 0 6px 10px 0 black;
+}
+
+#more {
+  display: flex;
+  margin: 10px 0;
+  padding: 10px;
+  width: 100px;
+  box-shadow: 0 6px 10px 0 black;
+}
+
+#less {
+  display: none;
+  margin: 10px 0;
+  padding: 10px;
+  box-shadow: 0 6px 10px 0 black;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .lists {
+    width: 100%;
+  }
+  .adding{
+    width: 100%;
+  }
+
+  h1 {
+    margin-left: 20px;
+  }
 }

@@ -2,6 +2,7 @@ import Score from './score.js';
 import './style.css';
 
 const newScore = new Score();
+newScore.fetchScore();
 const addNew = document.querySelector('.score-form');
 addNew.addEventListener('submit', (e) => {
   e.preventDefault();

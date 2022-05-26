@@ -17,7 +17,7 @@ fetchScore = async () => {
   try {
     const data = await fetch(this.baseUrl);
     const response = await data.json();
-    response.result.map((item) => this.dataScore.push(item));
+    this.dataScore = [...response.result];
     return this.getScore();
   } catch (error) {
     return error;
@@ -36,7 +36,7 @@ addScore = async ({ user, score }) => {
     };
     const data = await fetch(this.baseUrl, config);
     const response = await data.json();
-    this.dataScore.push(response);
+    this.dataScore = [...response.result];
     return this.fetchScore();
   } catch (error) {
     return error;

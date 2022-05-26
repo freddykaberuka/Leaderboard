@@ -1,8 +1,11 @@
 import Score from './score.js';
+import display from './display.js';
+
 import './style.css';
 
 const newScore = new Score();
 newScore.fetchScore();
+display();
 const addNew = document.querySelector('.score-form');
 addNew.addEventListener('submit', (e) => {
   e.preventDefault();
